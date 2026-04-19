@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "about": "About",
+    "education": "Education",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "interests": "Interests"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Shaoke",
+    "title": "Business Analytics Student",
+    "subtitle": "Global experience across China, London, and the U.S.",
+    "cta_primary": "View Work",
+    "cta_secondary": "About Me"
+  },
+  "about": {
+    "section_title": "About Me",
+    "eyebrow": "About",
+    "headline": "Understanding data. Interpreting people.",
+    "paragraph1": "I'm a Business Analytics student passionate about transforming complex data into clear, actionable insights. My academic and professional journey has taken me across three continents — China, the United Kingdom, and the United States.",
+    "paragraph2": "I combine strong analytical skills with a keen business intuition, leveraging tools like Python, SQL, and Tableau to drive data-informed decisions and measurable outcomes.",
+    "paragraph3": "Outside of work, I'm deeply curious about the intersection of technology, culture, and human behavior — a perspective shaped by living and working across very different environments.",
+    "stats": [
+      { "value": "3", "label": "Continents" },
+      { "value": "18", "label": "Countries" },
+      { "value": "3", "label": "Internships" }
+    ],
+    "journey": [
+      { "city": "Shanghai", "year": "2022" },
+      { "city": "London", "year": "2023" },
+      { "city": "New York", "year": "2024" }
+    ]
+  },
+  "education": {
+    "section_title": "Education",
+    "eyebrow": "Academic Background",
+    "items": [
+      {
+        "abbr": "UCLA",
+        "university": "University of California, Los Angeles",
+        "location": "Los Angeles, CA",
+        "degree": "Master of Science",
+        "major": "Business Analytics",
+        "period": "Aug 2026 – Dec 2027",
+        "gpa": "",
+        "minor": "",
+        "courses": ""
+      },
+      {
+        "abbr": "UR",
+        "university": "University of Rochester",
+        "location": "Rochester, NY",
+        "degree": "Bachelor of Science",
+        "major": "Business Analytics",
+        "period": "Aug 2022 – May 2026",
+        "gpa": "3.80 / 4.0",
+        "minor": "Computer Science",
+        "courses": "Data Management & Analytics, Linear Algebra, Statistics, Econometrics"
+      }
+    ]
+  },
+  "experience": {
+    "section_title": "Experience",
+    "items": [
+      {
+        "company": "RideTandem",
+        "role": "Operations Intern",
+        "period": "Aug 2025 – Dec 2025",
+        "location": "London, UK",
+        "bullets": [
+          "Queried and reconciled 100+ route and pricing records in SQL, reducing billing discrepancies by 18%",
+          "Resolved 15+ weekly cross-system inconsistencies, improving reporting accuracy and reducing reconciliation delays",
+          "Optimized data update workflows, reducing manual correction time by 20% and increasing data reliability"
+        ]
+      },
+      {
+        "company": "UBS Business Solutions",
+        "role": "Digital Business Analyst",
+        "period": "May 2025 – Aug 2025",
+        "location": "Shanghai, China",
+        "bullets": [
+          "Monitored 5–8 UX metrics including drop-off rate and feature adoption via Tableau and Power BI",
+          "Benchmarked digital onboarding experiences against 2–3 global peers on flow complexity and interaction design",
+          "Supported product initiatives by documenting requirements and tracking action items in Jira and Confluence"
+        ]
+      },
+      {
+        "company": "Frost & Sullivan",
+        "role": "Business Analyst Intern",
+        "period": "Mar 2025 – May 2025",
+        "location": "Shanghai, China (Remote)",
+        "bullets": [
+          "Supported two Fortune 500 client engagements, conducting 15+ expert interviews in the pharmaceutical sector",
+          "Synthesized Voice of Customer findings into structured research notes to support client deliverables",
+          "Built a research database of 26 healthcare companies by extracting financial data from annual reports"
+        ]
+      },
+      {
+        "company": "Lighthouse Capital",
+        "role": "Business Analyst Intern",
+        "period": "Jun 2024 – Aug 2024",
+        "location": "Beijing, China",
+        "bullets": [
+          "Identified high-growth investment targets by benchmarking revenue growth and profitability across 80+ companies",
+          "Modeled the financial performance of a travel-tech platform using CCA to support PE decision-making",
+          "Developed market analysis for a travel-tech platform to support business plan and client pitch deck"
+        ]
+      },
+      {
+        "company": "DataMINO LLC",
+        "role": "Business Analyst Intern",
+        "period": "Jan 2024 – Apr 2024",
+        "location": "Palo Alto, CA (Remote)",
+        "bullets": [
+          "Built Excel financial models to evaluate ROI across 15+ Hawaii short-term rental properties",
+          "Assessed market performance by researching 5+ leading platforms including Redfin in Excel",
+          "Developed scenario-based projections in Excel to support data-driven short-term rental investment decisions"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "section_title": "Projects",
+    "view_project": "View Project",
+    "items": [
+      {
+        "title": "E-Commerce Customer Segmentation",
+        "description": "Applied K-means clustering and RFM analysis to segment 500K+ customers, enabling targeted marketing campaigns that lifted conversion rates by 23% and reduced churn among high-value segments.",
+        "tags": ["Python", "scikit-learn", "Tableau", "SQL"]
+      },
+      {
+        "title": "Supply Chain Optimization Dashboard",
+        "description": "Built an interactive Power BI dashboard to monitor real-time KPIs across a global supply chain network, cutting reporting time from 3 days to under 2 hours and flagging 15+ risk bottlenecks.",
+        "tags": ["Power BI", "SQL", "Excel", "DAX"]
+      },
+      {
+        "title": "Financial News Sentiment Analysis",
+        "description": "Fine-tuned a BERT-based NLP model on 100K+ financial news articles to classify market sentiment. Achieved 78% test accuracy and integrated predictions into a live stock screening tool.",
+        "tags": ["Python", "BERT", "NLP", "Pandas"]
+      }
+    ]
+  },
+  "skills": {
+    "section_title": "Skills",
+    "categories": [
+      {
+        "name": "Analytics & Data",
+        "items": ["Python", "R", "SQL", "Tableau", "Power BI", "Excel"]
+      },
+      {
+        "name": "Development",
+        "items": ["JavaScript", "TypeScript", "React", "Next.js", "Git"]
+      },
+      {
+        "name": "Business",
+        "items": ["Strategy", "Market Research", "Financial Modeling", "Presentation"]
+      },
+      {
+        "name": "Languages",
+        "items": ["Mandarin (Native)", "English (Fluent)", "French (Basic)"]
+      }
+    ]
+  },
+  "interests": {
+    "section_title": "Interests",
+    "items": [
+      {
+        "title": "Photography",
+        "description": "Capturing urban textures and candid street scenes across every city I've called home."
+      },
+      {
+        "title": "Travel",
+        "description": "18 countries and counting. Every destination reshapes how I see data, people, and business."
+      },
+      {
+        "title": "Reading",
+        "description": "Behavioral economics, design thinking, and narrative non-fiction are my go-to genres."
+      },
+      {
+        "title": "Running",
+        "description": "Half-marathon finisher. Running is where I think through hard problems and reset."
+      }
+    ]
+  },
+  "footer": {
+    "contact_cta": "Let's Connect",
+    "contact_sub": "Open to internships, research collaborations, and interesting conversations.",
+    "rights": "All rights reserved.",
+    "made_with": "Designed & built with"
+  }
+}

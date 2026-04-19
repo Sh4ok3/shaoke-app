@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "about": "关于我",
+    "education": "教育背景",
+    "experience": "工作经历",
+    "projects": "项目经历",
+    "skills": "技能",
+    "interests": "兴趣爱好"
+  },
+  "hero": {
+    "greeting": "你好，我是",
+    "name": "邵可",
+    "title": "商业分析学生",
+    "subtitle": "跨越中国、伦敦与纽约，用数据讲述全球视野下的商业故事",
+    "cta_primary": "查看作品",
+    "cta_secondary": "了解我"
+  },
+  "about": {
+    "section_title": "关于我",
+    "eyebrow": "关于我",
+    "headline": "读懂数据，读懂人心。",
+    "paragraph1": "我是一名热衷于将复杂数据转化为清晰洞察的商业分析学生。求学与实习的经历让我走遍三大洲——从中国出发，途经英国伦敦，最终落脚美国，在多元文化中磨砺出独特的全球视角。",
+    "paragraph2": "我善于将扎实的数据分析能力与敏锐的商业直觉相结合，熟练运用 Python、SQL 和 Tableau 等工具，将数字背后的规律转化为可落地的业务决策。",
+    "paragraph3": "工作之余，我对科技、文化与人类行为的交叉地带充满好奇。在不同环境中生活与成长的经历，让我习惯从更宏观的视角审视每一个问题。",
+    "stats": [
+      { "value": "3", "label": "大洲" },
+      { "value": "18", "label": "个国家" },
+      { "value": "3", "label": "段实习" }
+    ],
+    "journey": [
+      { "city": "上海", "year": "2022" },
+      { "city": "伦敦", "year": "2023" },
+      { "city": "纽约", "year": "2024" }
+    ]
+  },
+  "education": {
+    "section_title": "教育背景",
+    "eyebrow": "学术经历",
+    "items": [
+      {
+        "abbr": "UCLA",
+        "university": "加州大学洛杉矶分校",
+        "location": "美国·洛杉矶",
+        "degree": "理学硕士",
+        "major": "商业分析",
+        "period": "2026年8月 – 2027年12月",
+        "gpa": "",
+        "minor": "",
+        "courses": ""
+      },
+      {
+        "abbr": "UR",
+        "university": "罗切斯特大学",
+        "location": "美国·纽约州",
+        "degree": "理学学士",
+        "major": "商业分析",
+        "period": "2022年8月 – 2026年5月",
+        "gpa": "3.80 / 4.0",
+        "minor": "计算机科学",
+        "courses": "商业数据管理与分析、线性代数、统计学、计量经济学"
+      }
+    ]
+  },
+  "experience": {
+    "section_title": "实习经历",
+    "items": [
+      {
+        "company": "RideTandem",
+        "role": "运营实习生",
+        "period": "2025年8月 – 2025年12月",
+        "location": "英国·伦敦",
+        "bullets": [
+          "使用 SQL 查询并核对 100+ 条路线与定价记录，将账单误差率降低 18%",
+          "每周解决 15+ 项跨系统数据不一致问题，提升报告准确性并减少核对延误",
+          "优化数据更新工作流，将人工修正耗时缩减 20%，提升数据可靠性"
+        ]
+      },
+      {
+        "company": "UBS Business Solutions",
+        "role": "数字业务分析师",
+        "period": "2025年5月 – 2025年8月",
+        "location": "中国·上海",
+        "bullets": [
+          "通过 Tableau 和 Power BI 监控 5–8 项用户体验指标，包括流失率与功能采用情况",
+          "对标 2–3 家全球同行，评估数字化引导流程在复杂度与交互设计维度的差距",
+          "在 Jira 和 Confluence 中记录需求并跟踪行动事项，协助推进产品工作"
+        ]
+      },
+      {
+        "company": "Frost & Sullivan",
+        "role": "商业分析实习生",
+        "period": "2025年3月 – 2025年5月",
+        "location": "中国·上海（远程）",
+        "bullets": [
+          "参与两个世界 500 强客户项目，在医药领域完成 15+ 次专家深访",
+          "将客户之声洞察整理为结构化研究报告，支持客户交付物产出",
+          "从年度报告中提取财务数据，构建涵盖 26 家医疗健康公司的研究数据库"
+        ]
+      },
+      {
+        "company": "Lighthouse Capital",
+        "role": "商业分析实习生",
+        "period": "2024年6月 – 2024年8月",
+        "location": "中国·北京",
+        "bullets": [
+          "通过对比 80+ 家公司的营收增长与盈利水平，识别高成长投资标的",
+          "运用可比公司分析（CCA）为一家旅行科技平台进行财务建模，支持 PE 投资决策",
+          "开展市场分析，为旅行科技平台的商业计划与客户路演材料提供数据支撑"
+        ]
+      },
+      {
+        "company": "DataMINO LLC",
+        "role": "商业分析实习生",
+        "period": "2024年1月 – 2024年4月",
+        "location": "美国·帕洛阿尔托（远程）",
+        "bullets": [
+          "构建 Excel 财务模型，评估夏威夷 15+ 套短租房产的投资回报率",
+          "研究 Redfin 等 5+ 家领先平台，在 Excel 中系统评估短租市场表现",
+          "在 Excel 中建立情景分析模型，支持短租投资数据驱动决策"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "section_title": "项目经历",
+    "view_project": "查看项目",
+    "items": [
+      {
+        "title": "电商用户分群模型",
+        "description": "基于 K-means 聚类与 RFM 模型，对 50 万余名用户进行精细化分群，赋能精准营销活动，转化率提升 23%，高价值用户流失率显著下降。",
+        "tags": ["Python", "scikit-learn", "Tableau", "SQL"]
+      },
+      {
+        "title": "供应链优化数据看板",
+        "description": "在 Power BI 中构建全球供应链实时 KPI 监控看板，将报告周期从 3 天压缩至 2 小时以内，并自动识别 15 余处潜在风险瓶颈。",
+        "tags": ["Power BI", "SQL", "Excel", "DAX"]
+      },
+      {
+        "title": "金融新闻情感分析",
+        "description": "基于 10 万余篇财经新闻对 BERT 模型进行微调，实现多类别市场情感分类，测试集准确率 78%，并将预测结果接入实时选股工具。",
+        "tags": ["Python", "BERT", "NLP", "Pandas"]
+      }
+    ]
+  },
+  "skills": {
+    "section_title": "技能",
+    "categories": [
+      {
+        "name": "数据分析",
+        "items": ["Python", "R", "SQL", "Tableau", "Power BI", "Excel"]
+      },
+      {
+        "name": "开发技能",
+        "items": ["JavaScript", "TypeScript", "React", "Next.js", "Git"]
+      },
+      {
+        "name": "商业能力",
+        "items": ["战略分析", "市场调研", "财务建模", "演示表达"]
+      },
+      {
+        "name": "语言能力",
+        "items": ["普通话（母语）", "英语（流利）", "法语（初级）"]
+      }
+    ]
+  },
+  "interests": {
+    "section_title": "兴趣爱好",
+    "items": [
+      {
+        "title": "摄影",
+        "description": "用镜头记录每座城市的街道肌理与市井瞬间，照片是我最私人的旅行日记。"
+      },
+      {
+        "title": "旅行",
+        "description": "走过 18 个国家，每一次出发都让我对数据、人与商业有了新的理解。"
+      },
+      {
+        "title": "阅读",
+        "description": "偏爱行为经济学、设计思维与叙事类非虚构作品，书是我最稳定的思维训练场。"
+      },
+      {
+        "title": "跑步",
+        "description": "半马完赛选手。跑步是我整理思路、保持专注的最佳方式。"
+      }
+    ]
+  },
+  "footer": {
+    "contact_cta": "联系我",
+    "contact_sub": "期待实习机会、学术合作以及一切有趣的对话。",
+    "rights": "保留所有权利。",
+    "made_with": "用心设计与开发，基于"
+  }
+}

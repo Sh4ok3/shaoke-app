@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default focus ring, add custom one */
+:focus-visible {
+  outline: 2px solid #0071E3;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Selection highlight */
+::selection {
+  background-color: #0071E3;
+  color: #ffffff;
+}
+
+/* Chinese typography — tighter tracking, no word-spacing */
+:lang(zh) * {
+  letter-spacing: 0 !important;
+  word-spacing: 0;
+}
+
+/* Smooth font rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d1d6;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a6;
+}
