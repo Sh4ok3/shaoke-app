@@ -9,8 +9,8 @@
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "name": "Shaoke",
-    "title": "Business Analytics Student",
+    "name": "Kyle",
+    "title": "Business Analyst",
     "subtitle": "Global experience across China, London, and the U.S.",
     "cta_primary": "View Work",
     "cta_secondary": "About Me"
@@ -19,18 +19,18 @@
     "section_title": "About Me",
     "eyebrow": "About",
     "headline": "Understanding data. Interpreting people.",
-    "paragraph1": "I'm a Business Analytics student passionate about transforming complex data into clear, actionable insights. My academic and professional journey has taken me across three continents — China, the United Kingdom, and the United States.",
-    "paragraph2": "I combine strong analytical skills with a keen business intuition, leveraging tools like Python, SQL, and Tableau to drive data-informed decisions and measurable outcomes.",
-    "paragraph3": "Outside of work, I'm deeply curious about the intersection of technology, culture, and human behavior — a perspective shaped by living and working across very different environments.",
+    "paragraph1": "I studied business analytics and computer science, but what I actually do feels more like trying to make sense of how the world works.",
+    "paragraph2": "Spending time in China, London, and the U.S. let me see how people make decisions differently. It got me thinking about what data really helps us understand.",
+    "paragraph3": "You can call me Kyle, though most friends call me Shock. It comes from how my Chinese name sounds. Outside of work, I like getting out of familiar places—it helps me reset. I also enjoy cooking and playing basketball, just keeping life from feeling too one-dimensional.",
     "stats": [
       { "value": "3", "label": "Continents" },
       { "value": "18", "label": "Countries" },
       { "value": "3", "label": "Internships" }
     ],
     "journey": [
-      { "city": "Shanghai", "year": "2022" },
-      { "city": "London", "year": "2023" },
-      { "city": "New York", "year": "2024" }
+      { "city": "Xi'an", "year": "2022" },
+      { "city": "New York", "year": "2026" },
+      { "city": "Los Angeles", "year": "2027" }
     ]
   },
   "education": {
@@ -43,6 +43,9 @@
         "location": "Los Angeles, CA",
         "degree": "Master of Science",
         "major": "Business Analytics",
+        "focus": "Focused on statistical modeling, machine learning, and optimization for business decision-making.",
+        "curriculum": "Coursework includes SQL and data management, statistical foundations (R/Python), and machine learning for decision making.",
+        "application": "Also covers business fundamentals and customer analytics, applying data to real-world business problems.",
         "period": "Aug 2026 – Dec 2027",
         "gpa": "",
         "minor": "",

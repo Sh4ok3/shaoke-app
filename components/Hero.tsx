@@ -18,7 +18,7 @@ export default function Hero() {
   const m = messages.hero
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
       {/* Ambient gradient blobs */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-blue-50 opacity-60 blur-3xl" />

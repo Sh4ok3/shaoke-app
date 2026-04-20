@@ -3,6 +3,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import ScrollArrow from './ScrollArrow'
 
 export default function Skills() {
   const { messages } = useLanguage()
@@ -11,7 +12,7 @@ export default function Skills() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="skills" ref={ref} className="py-32 bg-white">
+    <section id="skills" ref={ref} className="py-32 bg-white relative">
       <div className="max-w-6xl mx-auto px-6">
         <motion.h2
           className="text-[42px] md:text-5xl font-bold text-[#1D1D1F] tracking-tight mb-16 text-center"
@@ -48,6 +49,9 @@ export default function Skills() {
           ))}
         </div>
       </div>
+
+      <ScrollArrow direction="up" targetId="hero" />
+      <ScrollArrow direction="down" targetId="interests" />
     </section>
   )
 }

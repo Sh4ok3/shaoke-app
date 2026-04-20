@@ -44,9 +44,12 @@ export interface EducationItem {
   degree: string
   major: string
   period: string
-  gpa: string
-  minor: string
-  courses: string
+  gpa?: string
+  minor?: string
+  courses?: string
+  focus?: string
+  curriculum?: string
+  application?: string
 }
 
 export interface Messages {

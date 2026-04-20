@@ -3,6 +3,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import ScrollArrow from './ScrollArrow'
 
 const icons = ['📷', '✈️', '📚', '🏃']
 const gradients = [
@@ -19,7 +20,7 @@ export default function Interests() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="interests" ref={ref} className="py-32 bg-[#F5F5F7]">
+    <section id="interests" ref={ref} className="py-32 bg-[#F5F5F7] relative">
       <div className="max-w-6xl mx-auto px-6">
         <motion.h2
           className="text-[42px] md:text-5xl font-bold text-[#1D1D1F] tracking-tight mb-16 text-center"
@@ -46,6 +47,8 @@ export default function Interests() {
           ))}
         </div>
       </div>
+
+      <ScrollArrow direction="up" targetId="hero" />
     </section>
   )
 }

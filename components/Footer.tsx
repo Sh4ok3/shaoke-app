@@ -11,7 +11,7 @@ export default function Footer() {
   const inView = useInView(ref, { once: true })
 
   return (
-    <footer ref={ref} className="bg-[#1D1D1F] text-white py-28">
+    <footer id="footer" ref={ref} className="bg-[#1D1D1F] text-white py-28">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
 
           <div className="mt-16 pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-[#48484a]">
-            <p>© 2025 Shaoke. {m.rights}</p>
+            <p>© 2025 Kyle. {m.rights}</p>
             <p>
               {m.made_with}{' '}
               <span className="text-[#6E6E73]">Next.js & Tailwind CSS</span>

@@ -45,7 +45,7 @@ export default function Navbar() {
           href="#"
           className="text-base font-semibold text-[#1D1D1F] tracking-tight hover:opacity-60 transition-opacity duration-200"
         >
-          Shaoke
+          Kyle
         </a>
 
         {/* Desktop nav links */}

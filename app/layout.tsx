@@ -18,10 +18,10 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Shaoke — Portfolio',
+  title: 'Kyle — Portfolio',
   description:
     'Business Analytics Student with global experience across China, London, and the U.S.',
-  keywords: ['portfolio', 'business analytics', 'data', 'Shaoke'],
+  keywords: ['portfolio', 'business analytics', 'data', 'Kyle'],
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

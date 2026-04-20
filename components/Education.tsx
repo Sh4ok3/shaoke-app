@@ -3,70 +3,8 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
-
-/* ── UCLA wordmark SVG (monochrome, serif) ── */
-function UCLALogo() {
-  return (
-    <svg viewBox="0 0 88 36" xmlns="http://www.w3.org/2000/svg" className="h-8 w-auto" aria-label="UCLA">
-      {/* U */}
-      <path d="M2 4 L2 22 Q2 32 12 32 Q22 32 22 22 L22 4" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round"/>
-      {/* C */}
-      <path d="M38 8 Q28 8 28 18 Q28 28 38 28" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round"/>
-      {/* L */}
-      <path d="M44 4 L44 28 L56 28" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round"/>
-      {/* A */}
-      <path d="M62 28 L70 4 L78 28 M64.5 20 L75.5 20" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
-  )
-}
-
-/* ── University of Rochester shield SVG (monochrome) ── */
-function URochesterLogo() {
-  return (
-    <svg viewBox="0 0 56 68" xmlns="http://www.w3.org/2000/svg" className="h-12 w-auto" aria-label="University of Rochester">
-      {/* Outer shield */}
-      <path
-        d="M4 4 H52 V44 Q28 66 4 44 Z"
-        fill="none" stroke="currentColor" strokeWidth="1.8"
-      />
-      {/* Inner shield inset */}
-      <path
-        d="M9 9 H47 V42 Q28 60 9 42 Z"
-        fill="none" stroke="currentColor" strokeWidth="0.7" opacity="0.35"
-      />
-      {/* Horizontal divider */}
-      <line x1="4" y1="24" x2="52" y2="24" stroke="currentColor" strokeWidth="1.2" />
-      {/* Crown above divider */}
-      <path d="M19 14 L19 10 M28 14 L28 8 M37 14 L37 10 M16 14 H40 L38 20 H18 Z"
-        fill="none" stroke="currentColor" strokeWidth="1.1" strokeLinejoin="round" strokeLinecap="round" opacity="0.7"/>
-      {/* UR monogram */}
-      <text
-        x="28" y="38"
-        fontFamily="Georgia, 'Times New Roman', serif"
-        fontSize="13"
-        fontWeight="700"
-        fill="currentColor"
-        textAnchor="middle"
-        letterSpacing="1"
-      >UR</text>
-      {/* Meliora */}
-      <text
-        x="28" y="53"
-        fontFamily="Georgia, serif"
-        fontSize="4.8"
-        fill="currentColor"
-        textAnchor="middle"
-        letterSpacing="1.8"
-        opacity="0.55"
-      >MELIORA</text>
-    </svg>
-  )
-}
-
-const logoMap: Record<string, React.ReactNode> = {
-  UCLA: <UCLALogo />,
-  UR: <URochesterLogo />,
-}
+import SectionArrow from '@/components/SectionArrow'
+import ScrollArrow from './ScrollArrow'
 
 export default function Education() {
   const { messages } = useLanguage()
@@ -75,7 +13,7 @@ export default function Education() {
   const inView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="education" ref={ref} className="py-32 bg-white">
+    <section id="education" ref={ref} className="py-32 bg-white relative">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
@@ -93,8 +31,8 @@ export default function Education() {
           </h2>
         </motion.div>
 
-        {/* Two-column grid — flat editorial, 1px tonal separator */}
-        <div className="grid md:grid-cols-2 gap-px bg-[#E8E8ED]">
+        {/* Two-column grid — no divider, use whitespace */}
+        <div className="grid md:grid-cols-2 gap-8">
           {m.items.map((item, i) => (
             <motion.div
               key={i}
@@ -103,22 +41,33 @@ export default function Education() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.65, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
             >
-              {/* Logo + location */}
-              <div className="flex items-start justify-between mb-9">
-                <div className="text-[#1D1D1F]">
-                  {logoMap[item.abbr] ?? (
-                    <span className="text-[13px] font-bold tracking-widest">{item.abbr}</span>
+              {/* University name + location */}
+              <div className="flex items-center justify-between mb-6 gap-6">
+                <div className="flex items-center gap-3">
+                  {item.abbr === 'UCLA' && (
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/0/0d/UCLA_Bruins_logo.svg"
+                      alt="UCLA logo"
+                      className="h-4 w-auto opacity-70"
+                      onError={(e) => { (e.target as HTMLElement).style.display = 'none'; }}
+                    />
                   )}
+                  {item.abbr === 'UR' && (
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/0/05/University_of_Rochester_seal.svg"
+                      alt="University of Rochester logo"
+                      className="h-4 w-auto opacity-70"
+                      onError={(e) => { (e.target as HTMLElement).style.display = 'none'; }}
+                    />
+                  )}
+                  <h3 className="text-[18px] font-semibold text-[#1D1D1F] leading-snug tracking-tight">
+                    {item.university}
+                  </h3>
                 </div>
-                <span className="text-[11px] text-[#a1a1a6] tracking-wide mt-1">
+                <span className="text-[12px] text-[#6E6E73] font-medium tracking-wide">
                   {item.location}
                 </span>
               </div>
-
-              {/* University name */}
-              <h3 className="text-[17px] font-semibold text-[#1D1D1F] leading-snug tracking-tight mb-6">
-                {item.university}
-              </h3>
 
               {/* Thin rule */}
               <div className="w-8 h-px bg-[#E5E5EA] mb-6" />
@@ -158,7 +107,11 @@ export default function Education() {
           ))}
         </div>
 
+        </div>
       </div>
+
+      <ScrollArrow direction="up" targetId="hero" />
+      <ScrollArrow direction="down" targetId="experience" />
     </section>
   )
 }

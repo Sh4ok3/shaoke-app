@@ -3,6 +3,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import ScrollArrow from './ScrollArrow'
 
 export default function About() {
   const { messages, locale } = useLanguage()
@@ -12,7 +13,7 @@ export default function About() {
   const isZh = locale === 'zh'
 
   return (
-    <section id="about" ref={ref} className="py-32 bg-[#F5F5F7]">
+    <section id="about" ref={ref} className="py-32 bg-[#F5F5F7] relative">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
 
@@ -68,98 +69,24 @@ export default function About() {
 
           {/* ── RIGHT: Visual column ── */}
           <motion.div
-            className="flex flex-col gap-4"
+            className="flex flex-col gap-6 h-full"
             initial={{ opacity: 0, y: 28 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.18 }}
           >
-            {/* ── Dark gradient card ── */}
-            <div className="relative rounded-[24px] overflow-hidden bg-[#0d0d1a] p-8 md:p-10">
-              {/* Ambient glow */}
-              <div className="pointer-events-none absolute -top-16 -right-16 w-64 h-64 rounded-full bg-blue-600/25 blur-3xl" />
-              <div className="pointer-events-none absolute -bottom-12 -left-12 w-48 h-48 rounded-full bg-indigo-500/20 blur-2xl" />
-
-              {/* Stat numbers */}
-              <div className="relative z-10 grid grid-cols-3 gap-2 mb-8">
-                {m.stats.map((stat, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 12 }}
-                    animate={inView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ delay: 0.45 + i * 0.1, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                    className="text-center"
-                  >
-                    <p className="text-[44px] font-bold text-white leading-none tracking-tight tabular-nums">
-                      {stat.value}
-                    </p>
-                    <p className="text-[11px] text-blue-200/60 mt-2 font-medium uppercase tracking-wider">
-                      {stat.label}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
-
-              {/* Divider */}
-              <div className="relative z-10 w-full h-px bg-white/8 mb-8" />
-
-              {/* Abstract data network — SVG */}
-              <motion.div
-                className="relative z-10"
-                animate={{ y: [0, -4, 0] }}
-                transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
-              >
-                <svg viewBox="0 0 320 110" className="w-full" aria-hidden="true">
-                  <defs>
-                    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
-                      <stop offset="0%" stopColor="#818cf8" stopOpacity="0.6" />
-                      <stop offset="100%" stopColor="#818cf8" stopOpacity="0" />
-                    </radialGradient>
-                  </defs>
-
-                  {/* Connection lines */}
-                  {[
-                    [40, 55, 110, 25], [110, 25, 200, 60], [200, 60, 280, 30],
-                    [40, 55, 110, 85], [110, 85, 200, 60], [200, 60, 280, 85],
-                    [110, 25, 110, 85], [280, 30, 280, 85],
-                  ].map(([x1, y1, x2, y2], i) => (
-                    <motion.line
-                      key={i}
-                      x1={x1} y1={y1} x2={x2} y2={y2}
-                      stroke="white"
-                      strokeWidth="0.6"
-                      initial={{ pathLength: 0, opacity: 0 }}
-                      animate={inView ? { pathLength: 1, opacity: 0.18 } : {}}
-                      transition={{ delay: 0.7 + i * 0.06, duration: 0.5 }}
-                    />
-                  ))}
-
-                  {/* Nodes */}
-                  {[
-                    [40, 55, 3.5], [110, 25, 2.5], [110, 85, 2.5],
-                    [200, 60, 4.5], [280, 30, 2.5], [280, 85, 2.5],
-                  ].map(([cx, cy, r], i) => (
-                    <motion.circle
-                      key={i}
-                      cx={cx} cy={cy} r={r}
-                      fill="white"
-                      initial={{ opacity: 0, scale: 0 }}
-                      animate={inView ? { opacity: i === 3 ? 0.9 : 0.45, scale: 1 } : {}}
-                      transition={{ delay: 0.9 + i * 0.08, duration: 0.4, type: 'spring', bounce: 0.4 }}
-                    />
-                  ))}
-
-                  {/* Pulse ring on central node */}
-                  <motion.circle
-                    cx={200} cy={60} r={10}
-                    fill="none"
-                    stroke="#818cf8"
-                    strokeWidth="0.8"
-                    animate={{ r: [8, 16], opacity: [0.4, 0] }}
-                    transition={{ repeat: Infinity, duration: 2.4, ease: 'easeOut', delay: 1.2 }}
-                  />
-                </svg>
-              </motion.div>
-            </div>
+            {/* ── Profile photo ── */}
+            <motion.div
+              className="relative flex-1 flex items-center justify-center"
+              initial={{ opacity: 0, y: 12 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.45, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <img
+                src="/images/profile.jpg"
+                alt="Kyle"
+                className="w-full max-w-md h-96 object-cover rounded-2xl shadow-lg mx-auto"
+              />
+            </motion.div>
 
             {/* ── Journey timeline card ── */}
             <div className="bg-white rounded-[20px] px-6 py-5 border border-black/[0.06]">
@@ -203,6 +130,9 @@ export default function About() {
           </motion.div>
         </div>
       </div>
+
+      <ScrollArrow direction="up" targetId="hero" />
+      <ScrollArrow direction="down" targetId="education" />
     </section>
   )
 }
