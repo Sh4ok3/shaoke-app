@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import ScrollArrow from './ScrollArrow'
 
 const stagger = {
   hidden: {},
@@ -77,6 +78,8 @@ export default function Hero() {
           </a>
         </motion.div>
       </motion.div>
+
+      <ScrollArrow direction="down" targetId="about" />
 
       {/* Scroll indicator */}
       <motion.div
