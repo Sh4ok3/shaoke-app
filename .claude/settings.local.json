@@ -1,21 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run *)",
       "mcp__Claude_Preview__preview_start",
-      "Bash(netstat -ano)",
-      "mcp__Claude_in_Chrome__tabs_context_mcp",
-      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('interests'\\), indent=2\\)\\)\")",
-      "Bash(taskkill /PID 9580 /F)",
-      "PowerShell(Stop-Process -Id 9580 -Force)",
-      "Bash(git add *)",
-      "Bash(git commit -m ' *)",
-      "Bash(git push *)",
-      "Bash(gh pr create --title 'Redesign Interests, Projects & Skills sections to Apple-level premium UI' --body ' *)",
-      "Bash(git remote *)",
-      "Bash(curl -s https://api.github.com/repos/Sh4ok3/shaoke-app/pulls?head=Sh4ok3:claude/interesting-grothendieck-5e699b)",
-      "PowerShell($token = \\(& git credential fill 2>$null\\) | Where-Object { $_ -match \"^password=\" } | ForEach-Object { $_ -replace \"^password=\", \"\" }; if \\($token\\) { \"token found\" } else { \"no token\" })",
-      "PowerShell($cred = [System.Net.CredentialCache]::DefaultNetworkCredentials; $wc = New-Object System.Net.WebClient; $wc.Credentials = $cred; try { $result = [System.Net.CredentialCache]::DefaultCredentials; \"DefaultCredentials type: \" + $result.GetType\\(\\).Name } catch { $_.Exception.Message }; try { $cm = [Windows.Security.Credentials.PasswordVault,Windows.Security.Credentials,ContentType=WindowsRuntime]::new\\(\\); $creds = $cm.FindAllByResource\\(\"git:https://github.com\"\\); foreach\\($c in $creds\\) { $c.RetrievePassword\\(\\); \"user: \" + $c.UserName + \" pass_length: \" + $c.Password.Length } } catch { \"vault error: \" + $_.Exception.Message })"
+      "mcp__Claude_in_Chrome__tabs_context_mcp"
     ]
   }
 }
