@@ -37,6 +37,7 @@ export interface SkillCategory {
 
 export interface InterestItem {
   title: string
+  label?: string
   punchline: string
   description: string
 }

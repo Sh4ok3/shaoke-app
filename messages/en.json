@@ -181,24 +181,25 @@
     "section_title": "Interests",
     "items": [
       {
-        "title": "Photography",
-        "punchline": "Urban textures, raw moments.",
-        "description": "Capturing urban textures and candid street scenes across every city I've called home."
-      },
-      {
         "title": "Travel",
-        "punchline": "18 countries, infinite perspectives.",
-        "description": "18 countries and counting. Every destination reshapes how I see data, people, and business."
+        "label": "Lifestyle & Exploration",
+        "punchline": "Exploring the world, on and off the map.",
+        "description": "I've traveled across 13 countries, experiencing different cultures and perspectives. These journeys shape how I approach data, people, and decisions."
       },
       {
-        "title": "Reading",
-        "punchline": "Ideas that reshape thinking.",
-        "description": "Behavioral economics, design thinking, and narrative non-fiction are my go-to genres."
+        "title": "Sports",
+        "punchline": "Movement keeps me sharp.",
+        "description": "Basketball, tennis, climbing, surfing, and skiing — I enjoy sports that challenge both focus and adaptability."
       },
       {
-        "title": "Running",
-        "punchline": "Where hard problems get solved.",
-        "description": "Half-marathon finisher. Running is where I think through hard problems and reset."
+        "title": "Gaming",
+        "punchline": "Competitive by nature.",
+        "description": "I play esports games that require fast decision-making, strategy, and teamwork under pressure."
+      },
+      {
+        "title": "Cooking",
+        "punchline": "Building flavors, like systems.",
+        "description": "I cook both Chinese and Western dishes. Cooking is where structure meets creativity."
       }
     ]
   },
