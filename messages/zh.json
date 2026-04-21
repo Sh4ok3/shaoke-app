@@ -5,7 +5,8 @@
     "experience": "工作经历",
     "projects": "项目经历",
     "skills": "技能",
-    "interests": "兴趣爱好"
+    "interests": "兴趣爱好",
+    "moments": "时光"
   },
   "hero": {
     "greeting": "你好，我是",
@@ -127,16 +128,22 @@
     "items": [
       {
         "title": "电商用户分群模型",
+        "impact": "转化率提升 23%。",
+        "context": "对 50 万余名用户进行 K-means 聚类与 RFM 分析，赋能精准营销活动。",
         "description": "基于 K-means 聚类与 RFM 模型，对 50 万余名用户进行精细化分群，赋能精准营销活动，转化率提升 23%，高价值用户流失率显著下降。",
         "tags": ["Python", "scikit-learn", "Tableau", "SQL"]
       },
       {
         "title": "供应链优化数据看板",
+        "impact": "报告周期：3 天 → 2 小时。",
+        "context": "全球供应链实时 KPI 监控，自动识别 15 余处潜在风险瓶颈。",
         "description": "在 Power BI 中构建全球供应链实时 KPI 监控看板，将报告周期从 3 天压缩至 2 小时以内，并自动识别 15 余处潜在风险瓶颈。",
         "tags": ["Power BI", "SQL", "Excel", "DAX"]
       },
       {
         "title": "金融新闻情感分析",
+        "impact": "分类准确率达 78%。",
+        "context": "基于 10 万余篇财经新闻微调 BERT 模型，接入实时选股工具。",
         "description": "基于 10 万余篇财经新闻对 BERT 模型进行微调，实现多类别市场情感分类，测试集准确率 78%，并将预测结果接入实时选股工具。",
         "tags": ["Python", "BERT", "NLP", "Pandas"]
       }
@@ -147,18 +154,22 @@
     "categories": [
       {
         "name": "数据分析",
+        "statement": "将杂乱的数据，转化为清晰的决策。",
         "items": ["Python", "R", "SQL", "Tableau", "Power BI", "Excel"]
       },
       {
         "name": "开发技能",
+        "statement": "构建让想法真正落地的工具。",
         "items": ["JavaScript", "TypeScript", "React", "Next.js", "Git"]
       },
       {
         "name": "商业能力",
+        "statement": "让数字成为战略洞察的语言。",
         "items": ["战略分析", "市场调研", "财务建模", "演示表达"]
       },
       {
         "name": "语言能力",
+        "statement": "跨越文化边界，而不只是语言边界。",
         "items": ["普通话（母语）", "英语（流利）", "法语（初级）"]
       }
     ]
@@ -168,19 +179,84 @@
     "items": [
       {
         "title": "摄影",
+        "punchline": "城市纹理，街头瞬间。",
         "description": "用镜头记录每座城市的街道肌理与市井瞬间，照片是我最私人的旅行日记。"
       },
       {
         "title": "旅行",
+        "punchline": "18 个国家，无数视角。",
         "description": "走过 18 个国家，每一次出发都让我对数据、人与商业有了新的理解。"
       },
       {
         "title": "阅读",
+        "punchline": "重塑思维的阅读。",
         "description": "偏爱行为经济学、设计思维与叙事类非虚构作品，书是我最稳定的思维训练场。"
       },
       {
         "title": "跑步",
+        "punchline": "难题在跑步中破解。",
         "description": "半马完赛选手。跑步是我整理思路、保持专注的最佳方式。"
+      }
+    ]
+  },
+  "moments": {
+    "section_title": "时光",
+    "groups": [
+      {
+        "theme": "运动与能量",
+        "items": [
+          {
+            "caption": "放手，信任这次坠落。",
+            "location": "葡萄牙",
+            "year": "2025",
+            "src": "/images/picture2.jpg",
+            "alt": "葡萄牙高空跳伞",
+            "hero": true
+          },
+          {
+            "caption": "站在天空触手可及的地方。",
+            "location": "夏威夷·茂纳凯亚",
+            "year": "2025",
+            "src": "/images/picture1.jpg",
+            "alt": "茂纳凯亚山顶日出"
+          },
+          {
+            "caption": "刻意迷路。",
+            "location": "东京",
+            "year": "2024",
+            "src": "/images/picture4.jpg",
+            "alt": "东京夜晚街道"
+          }
+        ]
+      },
+      {
+        "theme": "静默与沉思",
+        "items": [
+          {
+            "caption": "寂静在这里延伸得更远。",
+            "location": "盐湖城",
+            "year": "2024",
+            "src": "/images/picture6.jpg",
+            "alt": "盐湖城风景",
+            "wide": true
+          },
+          {
+            "caption": "慢下来，刚好能注意到。",
+            "location": "伦敦",
+            "year": "2024",
+            "src": "/images/picture3.jpg",
+            "alt": "伦敦静谧光线",
+            "hero": true
+          },
+          {
+            "caption": "一切都变得更轻盈。",
+            "location": "济州",
+            "year": "2024",
+            "src": "/images/picture5.jpg",
+            "alt": "济州岛海岸",
+            "wide": true
+          }
+        ]
       }
     ]
   },

@@ -10,6 +10,7 @@ import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 import Skills from '@/components/Skills'
 import Interests from '@/components/Interests'
+import Moments from '@/components/Moments'
 import Footer from '@/components/Footer'
 
 export default function Page() {
@@ -32,6 +33,7 @@ export default function Page() {
           <Projects />
           <Skills />
           <Interests />
+          <Moments />
           <Footer />
         </main>
       </motion.div>

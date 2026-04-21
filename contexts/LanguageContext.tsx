@@ -23,18 +23,37 @@ export interface ExperienceItem {
 
 export interface ProjectItem {
   title: string
+  impact: string
+  context: string
   description: string
   tags: string[]
 }
 
 export interface SkillCategory {
   name: string
+  statement: string
   items: string[]
 }
 
 export interface InterestItem {
   title: string
+  punchline: string
   description: string
+}
+
+export interface MomentItem {
+  caption: string
+  location: string
+  year: string
+  src: string
+  alt: string
+  hero?: boolean
+  wide?: boolean
+}
+
+export interface MomentGroup {
+  theme: string
+  items: MomentItem[]
 }
 
 export interface EducationItem {
@@ -60,6 +79,7 @@ export interface Messages {
     projects: string
     skills: string
     interests: string
+    moments: string
   }
   hero: {
     greeting: string
@@ -100,6 +120,10 @@ export interface Messages {
   interests: {
     section_title: string
     items: InterestItem[]
+  }
+  moments: {
+    section_title: string
+    groups: MomentGroup[]
   }
   footer: {
     contact_cta: string
