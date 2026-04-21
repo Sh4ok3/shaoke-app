@@ -5,7 +5,8 @@
     "experience": "Experience",
     "projects": "Projects",
     "skills": "Skills",
-    "interests": "Interests"
+    "interests": "Interests",
+    "moments": "Moments"
   },
   "hero": {
     "greeting": "Hi, I'm",
@@ -198,6 +199,67 @@
         "title": "Running",
         "punchline": "Where hard problems get solved.",
         "description": "Half-marathon finisher. Running is where I think through hard problems and reset."
+      }
+    ]
+  },
+  "moments": {
+    "section_title": "Moments",
+    "groups": [
+      {
+        "theme": "Motion / Energy",
+        "items": [
+          {
+            "caption": "Let go, and trust the fall.",
+            "location": "Portugal",
+            "year": "2025",
+            "src": "/images/picture2.jpg",
+            "alt": "Skydiving over Portugal",
+            "hero": true
+          },
+          {
+            "caption": "Standing where the sky feels closer.",
+            "location": "Mauna Kea, Hawaii",
+            "year": "2025",
+            "src": "/images/picture1.jpg",
+            "alt": "Mauna Kea summit at sunrise"
+          },
+          {
+            "caption": "Getting lost, on purpose.",
+            "location": "Tokyo",
+            "year": "2024",
+            "src": "/images/picture4.jpg",
+            "alt": "Tokyo street at night"
+          }
+        ]
+      },
+      {
+        "theme": "Stillness / Reflection",
+        "items": [
+          {
+            "caption": "Silence stretches further here.",
+            "location": "Salt Lake City",
+            "year": "2024",
+            "src": "/images/picture6.jpg",
+            "alt": "Salt Lake City landscape",
+            "wide": true
+          },
+          {
+            "caption": "Slowing down, just enough to notice.",
+            "location": "London",
+            "year": "2024",
+            "src": "/images/picture3.jpg",
+            "alt": "London in quiet light",
+            "hero": true
+          },
+          {
+            "caption": "Where everything feels lighter.",
+            "location": "Jeju",
+            "year": "2024",
+            "src": "/images/picture5.jpg",
+            "alt": "Jeju island coast",
+            "wide": true
+          }
+        ]
       }
     ]
   },

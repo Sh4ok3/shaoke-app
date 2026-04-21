@@ -198,6 +198,7 @@ export default function Interests() {
       </div>
 
       <ScrollArrow direction="up" targetId="hero" />
+      <ScrollArrow direction="down" targetId="moments" />
     </section>
   )
 }

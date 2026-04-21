@@ -25,6 +25,7 @@ export default function Navbar() {
     { href: '#projects', label: m.projects },
     { href: '#skills', label: m.skills },
     { href: '#interests', label: m.interests },
+    { href: '#moments', label: m.moments },
   ]
 
   return (

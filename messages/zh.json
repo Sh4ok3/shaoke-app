@@ -5,7 +5,8 @@
     "experience": "工作经历",
     "projects": "项目经历",
     "skills": "技能",
-    "interests": "兴趣爱好"
+    "interests": "兴趣爱好",
+    "moments": "时光"
   },
   "hero": {
     "greeting": "你好，我是",
@@ -195,6 +196,67 @@
         "title": "跑步",
         "punchline": "难题在跑步中破解。",
         "description": "半马完赛选手。跑步是我整理思路、保持专注的最佳方式。"
+      }
+    ]
+  },
+  "moments": {
+    "section_title": "时光",
+    "groups": [
+      {
+        "theme": "运动与能量",
+        "items": [
+          {
+            "caption": "放手，信任这次坠落。",
+            "location": "葡萄牙",
+            "year": "2025",
+            "src": "/images/picture2.jpg",
+            "alt": "葡萄牙高空跳伞",
+            "hero": true
+          },
+          {
+            "caption": "站在天空触手可及的地方。",
+            "location": "夏威夷·茂纳凯亚",
+            "year": "2025",
+            "src": "/images/picture1.jpg",
+            "alt": "茂纳凯亚山顶日出"
+          },
+          {
+            "caption": "刻意迷路。",
+            "location": "东京",
+            "year": "2024",
+            "src": "/images/picture4.jpg",
+            "alt": "东京夜晚街道"
+          }
+        ]
+      },
+      {
+        "theme": "静默与沉思",
+        "items": [
+          {
+            "caption": "寂静在这里延伸得更远。",
+            "location": "盐湖城",
+            "year": "2024",
+            "src": "/images/picture6.jpg",
+            "alt": "盐湖城风景",
+            "wide": true
+          },
+          {
+            "caption": "慢下来，刚好能注意到。",
+            "location": "伦敦",
+            "year": "2024",
+            "src": "/images/picture3.jpg",
+            "alt": "伦敦静谧光线",
+            "hero": true
+          },
+          {
+            "caption": "一切都变得更轻盈。",
+            "location": "济州",
+            "year": "2024",
+            "src": "/images/picture5.jpg",
+            "alt": "济州岛海岸",
+            "wide": true
+          }
+        ]
       }
     ]
   },
