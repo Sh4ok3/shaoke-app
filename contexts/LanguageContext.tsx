@@ -23,17 +23,21 @@ export interface ExperienceItem {
 
 export interface ProjectItem {
   title: string
+  impact: string
+  context: string
   description: string
   tags: string[]
 }
 
 export interface SkillCategory {
   name: string
+  statement: string
   items: string[]
 }
 
 export interface InterestItem {
   title: string
+  punchline: string
   description: string
 }
 

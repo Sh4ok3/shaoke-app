@@ -130,16 +130,22 @@
     "items": [
       {
         "title": "E-Commerce Customer Segmentation",
+        "impact": "Lifted conversion by 23%.",
+        "context": "K-means clustering and RFM analysis across 500K+ customers to enable precision-targeted campaigns.",
         "description": "Applied K-means clustering and RFM analysis to segment 500K+ customers, enabling targeted marketing campaigns that lifted conversion rates by 23% and reduced churn among high-value segments.",
         "tags": ["Python", "scikit-learn", "Tableau", "SQL"]
       },
       {
         "title": "Supply Chain Optimization Dashboard",
+        "impact": "Reporting time: 3 days → 2 hours.",
+        "context": "Real-time KPI monitoring across a global supply chain, surfacing 15+ risk bottlenecks automatically.",
         "description": "Built an interactive Power BI dashboard to monitor real-time KPIs across a global supply chain network, cutting reporting time from 3 days to under 2 hours and flagging 15+ risk bottlenecks.",
         "tags": ["Power BI", "SQL", "Excel", "DAX"]
       },
       {
         "title": "Financial News Sentiment Analysis",
+        "impact": "78% classification accuracy.",
+        "context": "BERT fine-tuned on 100K+ articles, integrated into a live stock screening tool.",
         "description": "Fine-tuned a BERT-based NLP model on 100K+ financial news articles to classify market sentiment. Achieved 78% test accuracy and integrated predictions into a live stock screening tool.",
         "tags": ["Python", "BERT", "NLP", "Pandas"]
       }
@@ -150,18 +156,22 @@
     "categories": [
       {
         "name": "Analytics & Data",
+        "statement": "Turning messy data into clear decisions.",
         "items": ["Python", "R", "SQL", "Tableau", "Power BI", "Excel"]
       },
       {
         "name": "Development",
+        "statement": "Building the tools that bring ideas to life.",
         "items": ["JavaScript", "TypeScript", "React", "Next.js", "Git"]
       },
       {
         "name": "Business",
+        "statement": "Translating numbers into strategy.",
         "items": ["Strategy", "Market Research", "Financial Modeling", "Presentation"]
       },
       {
         "name": "Languages",
+        "statement": "Thinking across cultures, not just borders.",
         "items": ["Mandarin (Native)", "English (Fluent)", "French (Basic)"]
       }
     ]
@@ -171,18 +181,22 @@
     "items": [
       {
         "title": "Photography",
+        "punchline": "Urban textures, raw moments.",
         "description": "Capturing urban textures and candid street scenes across every city I've called home."
       },
       {
         "title": "Travel",
+        "punchline": "18 countries, infinite perspectives.",
         "description": "18 countries and counting. Every destination reshapes how I see data, people, and business."
       },
       {
         "title": "Reading",
+        "punchline": "Ideas that reshape thinking.",
         "description": "Behavioral economics, design thinking, and narrative non-fiction are my go-to genres."
       },
       {
         "title": "Running",
+        "punchline": "Where hard problems get solved.",
         "description": "Half-marathon finisher. Running is where I think through hard problems and reset."
       }
     ]
