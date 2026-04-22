@@ -8,15 +8,6 @@ import ScrollArrow from './ScrollArrow'
 
 const EASE = [0.22, 1, 0.36, 1] as const
 
-// ── Hero dimensions: ~1.35x taller than supporting images ────────────────────
-// Group 2 total (wide + hero + wide + gaps): 300 + 455 + 300 + 48 = 1103px → fits max-w-6xl
-const HERO_W = 455
-const HERO_H = 445
-const WIDE_W = 300
-const WIDE_H = 335
-const SMALL_W = 265
-const SMALL_H = 335
-
 // ── Single image + caption block ─────────────────────────────────────────────
 
 function MomentPhoto({
@@ -28,32 +19,26 @@ function MomentPhoto({
   delay: number
   inView: boolean
 }) {
-  const w = item.hero ? HERO_W : item.wide ? WIDE_W : SMALL_W
-  const h = item.hero ? HERO_H : item.wide ? WIDE_H : SMALL_H
-
   return (
     <motion.div
-      className="flex-shrink-0 group cursor-default"
-      style={{ width: w }}
+      className="group cursor-default"
       initial={{ opacity: 0, y: 20 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.75, delay, ease: EASE }}
     >
       {/* Image — no card, sits directly on page */}
       <div
-        className="overflow-hidden rounded-[20px]
-          transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]
-          group-hover:-translate-y-[5px]"
-        style={{ height: h }}
+        className="aspect-[4/5] overflow-hidden rounded-[20px]
+          transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]
+          group-hover:scale-[1.02] group-hover:shadow-lg"
       >
         <img
           src={item.src}
           alt={item.alt}
           draggable={false}
-          className="w-full h-full object-cover
+          className="w-full h-full object-cover object-center
             filter saturate-[.90] brightness-[.96]
-            transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]
-            group-hover:scale-[1.03]"
+            transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]"
         />
       </div>
 
@@ -136,8 +121,8 @@ export default function Moments() {
               {group.theme}
             </motion.p>
 
-            {/* Image row — bottom-aligned for editorial stagger */}
-            <div className="flex items-end gap-6 lg:gap-8 overflow-x-auto scrollbar-none pb-2">
+            {/* Image grid — clean and balanced */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
               {group.items.map((item, ii) => (
                 <MomentPhoto
                   key={ii}

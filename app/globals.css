@@ -55,3 +55,24 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #a1a1a6;
 }
+
+/* Hero animations */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(25px);
+    filter: blur(10px);
+  }
+  100% {
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.animate-hero {
+  transform: translateY(25px);
+  filter: blur(10px);
+}
+
+.animate-hero.active {
+  animation: fadeInUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
